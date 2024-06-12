@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  background-position: center;
+  background-size: cover;
+  background-image: url("IMGS/bg-home-2.jpg");
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 9.6vh;
+  margin-top: 2vh;
+}
+
+.box-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh 4vw;
+  width: 100%;
+}
+
+.box-logo {
+  display: flex;
+  justify-content: center;
+  height: 9.5vh;
+}
+
+.logo-rava {
+  background-size: cover;
+}
+
+.box-links-nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-nav {
+  transition: border-color 0.3s linear, transform 0.3s ease;
+  text-decoration: none;
+  padding: 1.2em 0;
+  margin: 5px;
+  white-space: nowrap;
+  border-bottom: 0.3vh solid transparent;
+}
+
+.links-nav:hover,
+.links-nav:active {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.poppins {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.alegreya {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-button.hidden {
+  display: none;
+}
+
+.box-content-home {
+  height: 90.4vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10vw;
+}
+
+.box-rava-art-home {
+  width: calc(22vw + 2rem);
+  height: calc(22vw + 2rem);
+  max-width: 20em;
+  max-height: 20em;
+  background-image: url("/src/IMGS/generic-vector.png");
+  background-size: cover;
+}
+
+.box-card-rava-home {
+  width: 60%;
+  height: 40%;
+  font-size: calc(0.5em + 2vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.box-content-services-portfolio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10vw;
+}
+
+.title-content {
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  justify-content: center;
+  height: 33vh;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.box-cards-services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 75vh;
+  margin-bottom: 10vh;
+}
+
+.box-card-services {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.box-card-services:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.img-card-services {
+  width: 9vw;
+  height: 9vw;
+}
+
+.project-card-name {
+  text-align: center;
+  font-size: calc(0.2rem + 1.5vw);
+  margin-bottom: 0.5em;
+  margin-top: 0.7vw;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.service-card-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8vw;
+  text-align: center;
+  line-height: 1.6;
+  border-radius: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40%;
+  cursor: default;
+  width: 80%;
+  max-width: 400px;
+}
+
+.box-content-team {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10vw;
+  margin-top: 20vh;
+}
+
+.box-cards-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.box-card-team {
+  border-radius: 6%;
+  width: 28%;
+  height: 100%;
+  max-width: 40vh;
+  min-width: 20vh;
+  border: 2px solid rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 2vw;
+}
+
+.box-card-team:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05) translateZ(0);
+}
+
+.box-img-description-card-team {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+}
+
+.img-avatar-card-team {
+  width: calc(50px + 5vw);
+  height: calc(50px + 5vw);
+  border-radius: 50%;
+}
+
+.name-card-team {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: calc(0.8em + 0.4vw);
+  white-space: nowrap;
+  cursor: default;
+  text-align: center;
+}
+
+.description-card-team {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8vh;
+  text-align: center;
+  cursor: default;
+}
+
+.box-social-media-card-team {
+  display: flex;
+  justify-content: space-around;
+  width: 56%;
+  height: 20%;
+  align-items: center;
+}
+
+.link-icon-card-team {
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-social-media-card-team {
+  width: 60%;
+  height: 60%;
+}
+
+.box-content-FAQs {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10vw;
+  margin-bottom: 10vh;
+}
+
+.box-cards-FAQs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-card-FAQ {
+  height: auto;
+  min-height: 4em;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 2em;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box-card-FAQ:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.title-FAQ {
+  font-size: 2.5vw;
+  padding-top: 0.2em;
+}
+
+.description-FAQ {
+  margin-top: 1em;
+  text-align: left;
+}
+
+footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glassIco {
+  --width: 100px;
+  width: var(--width);
+  height: var(--width);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.glassIco img {
+  width: 60%;
+  height: 60%;
+}
+
+.glassIco:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(0px);
+  transition: 400ms;
+  transform: skewX(45deg) translateX(calc(var(--width) + 50%));
+}
+
+.glassIco:hover {
+  transform: scale(1.05);
+}
+
+.glassIco > * {
+  opacity: 0.8;
+}
+
+.contact-header {
+  flex-basis: 100%;
+}
+
+.contact-footer {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 2em;
+  gap: 10px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.contact-right {
+  margin: 0;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  gap: 10px;
+  flex: 1;
+}
+
+.contact-left {
+  flex-basis: 100%;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-footer textarea {
+  box-sizing: border-box;
+  color: whitesmoke;
+  outline: none;
+  resize: none;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-msg {
+  flex-basis: 100%;
+}
+
+.contact-footer button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .box-content-home {
+    justify-content: center;
+  }
+  .box-links-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+  }
+
+  .box-links-nav.open {
+    display: flex;
+    transform: translateX(0);
+    width: 30%;
+  }
+
+  .links-nav {
+    color: white;
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+  }
+
+  .contact-right,
+  .contact-left {
+    width: 100%;
+  }
+
+  .box-content-home {
+    flex-direction: column-reverse;
+  }
+
+  .glassIco {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .title-FAQ {
+    font-size: 3.5vw;
+  }
+
+  .img-card-services {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .project-card-name {
+    font-size: 2.2vw;
+  }
+
+  .service-card-description {
+    font-size: 0.95vw;
+  }
+
+  .box-card-team {
+    height: 35vh;
+  }
+
+  .links-nav {
+    font-size: 2.8vw;
+  }
+
+  .box-links-nav {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 769px) {
+  .close-button {
+    display: none;
+  }
+
+  .contact-right,
+  .contact-left {
+    width: 50%;
+  }
+
+  .service-card-description {
+    font-size: 0.85vw;
+  }
+
+  .box-card-services {
+    height: 75%;
+  }
+}
+
+@media (max-width: 440px) {
+  .box-cards-team {
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+  }
+
+  .box-card-services {
+    width: 40%;
+  }
+
+  .box-cards-services {
+    margin-bottom: 40vh;
+  }
+
+  .box-card-team {
+    width: 40%;
+    height: 40vh;
+    margin: 10px 0;
+    justify-content: space-around;
+  }
+
+  .img-avatar-card-team {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .name-card-team {
+    font-size: 3vw;
+  }
+
+  .description-card-team {
+    font-size: 2vw;
+  }
+
+  .box-social-media-card-team {
+    width: 60%;
+  }
+
+  .link-icon-card-team {
+    width: 24px;
+  }
+
+  .img-social-media-card-team {
+    width: 60%;
+    height: 60%;
+  }
+
+  .box-img-description-card-team {
+    height: 70%;
+  }
+
+  .box-content-FAQs {
+    margin-top: 10vh;
+  }
+
+  .title-content {
+    font-size: 8vw;
+  }
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
